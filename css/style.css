@@ -1,0 +1,399 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Encabezado*/
+header{
+    background-image: url(../img/6765109_3433312.jpg);
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+}
+
+header h1{
+    color: #F8F8F8;
+    margin-left: 10px;
+    font-family: 'Silkscreen', cursive;
+    text-shadow: 6px 6px 4px black;
+}
+
+header a{
+    text-decoration: none;
+}
+header nav a:hover{
+    text-decoration: underline;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul, nav li{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 0.7000em 0;
+    font-family: 'Righteous', cursive;
+}
+
+nav details{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Righteous', cursive;
+}
+nav details p{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+nav details p:hover{
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+header summary:hover{
+    text-decoration: underline;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.encabezado{
+    height: 20vh;
+    margin: 0 0.75em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.titulo img:hover{
+    transform: rotate(20deg);
+}
+/*Home*/
+.home{
+    background-image: url(../img/home.jpg);
+    background-attachment: fixed;
+    min-height: 100vh;
+    min-width: 100%;
+    padding: 60vh 0 30vh 0;
+}
+.home h1{
+    font-size: 35px;
+    font-family: 'Silkscreen', cursive;
+    letter-spacing: 5px;
+    color: #F8F8F8;
+    margin: 20px 0;
+}
+.home p, .home a{
+    color: #F8F8F8;
+    font-family: 'Righteous', cursive;
+    text-decoration: none;
+}
+.titulohome{
+    background-color: black;
+}
+.titulohome p{
+    margin: 10px 0;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.home button{
+    background-color: black;
+    color: #F8F8F8;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid white 1px;
+    cursor: pointer;
+    font-family: 'Righteous', cursive;
+}
+
+/*Pagina Principal*/
+main{
+    background-image: url(../img/dirty-pattern-paint-room-block\ \(1\).jpg);
+    background-attachment: fixed;
+}
+
+main .section-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 27vh;
+}
+.continuar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    font-family: 'Righteous', cursive;
+}
+.continuar a{
+    text-decoration: none;
+    color: black;
+}
+
+.productos{
+    min-width: 90%;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.9375em 0.625em;
+    margin: 1.25em 0;
+}
+
+.productos div {
+    max-width: 18.75em;
+    max-height: 21.875em;
+    border: solid black;
+    border-radius: 20px;
+    background-color: rgb(70, 70, 70);
+}
+
+.productos div img {
+    border-radius: 20px;
+    border: solid black 2px;
+    margin: 10px;
+}
+
+.productos div a h3{
+    background-color: rgb(175, 170, 170);
+    color: black;
+    border-radius: 20px;
+    border: solid black 2px;
+    font-family: 'Righteous', cursive;
+}
+.productos a{
+    text-decoration: none;
+}
+.productos button{
+    font-family: 'Righteous', cursive;
+    border: solid black 1px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 3px;
+    cursor: pointer;
+    box-shadow: 8px 8px 10px black
+}
+.productos button:hover{
+    transform: scale(1.1);
+    color: rgb(0, 140, 255);
+}
+
+.section-productos h2, .section-productos a{
+    font-family: 'Silkscreen', cursive;
+    margin: 20px 0;
+    color: black;
+    text-decoration: none;
+}
+.section-productos h2{
+    text-shadow: 4px 4px 2px grey;
+    padding-top: 20px;
+}
+
+.section-productos p{
+    font-family: 'Righteous', cursive;
+}
+
+/*Pie de pagina*/
+footer{
+    background-image: url(../img/6765109_3433312.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+footer ul a, footer ul li{
+    color: #F8F8F8;
+    text-decoration: underline;
+    font-family: 'Righteous', cursive;
+}
+footer ul li:hover{
+    transform: scale(1.05);
+}
+
+footer p{
+    color: #F8F8F8;
+    text-align: center;
+    padding-bottom: 0.9375em;
+    font-family: 'Righteous', cursive;
+}
+
+.pie a img:hover{
+    width: 2.1875em;
+    height: 2.1875em;
+}
+.pie a img{
+    background-color: #F8F8F8;
+    border-radius: 20px;
+}
+
+.pie{
+    margin: 0px 1.875em;
+    padding: 1.5625em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ws img{
+    background-color: #F8F8F8;
+    border-radius: 20px;
+}
+
+/*Productos*/
+
+.descripcion{
+    font-family: 'Righteous', cursive;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+    border: solid black 2px;
+    border-radius: 20px;
+    width: 400px;
+    height: 500px;
+}
+
+.corazon {
+    align-self: flex-end;
+}
+
+.descripcion p{
+    align-self: flex-start;
+}
+
+.descripcion .talles{
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: rgb(70, 70, 70);
+    font-family: 'Righteous', cursive;
+    padding: 10px;
+    margin: 10px 1.5px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 3px black;
+}
+
+.descripcion a p{
+    max-width: 9.375em;
+    max-height: 5.625em;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+.descripcion h3{
+    text-align: center;
+}
+.añadir-carrito button{
+    padding: 7px;
+    border-radius: 10px;
+    background-color: rgb(70, 70, 70);
+    color: #F8F8F8;
+    font-family: 'Righteous', cursive;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 6px 3px black;
+}
+
+.añadir-carrito a{
+    color: white;
+    text-decoration: none;
+}
+.añadir-carrito img{
+    margin-left: 30px;
+}
+
+.ordenProducto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 35vh;
+}
+.ordenProducto section{
+    margin: 30px 0;
+}
+
+.img-producto img{
+    border: solid black 2px;
+    border-radius: 15px;
+    max-width: 80%;
+}
+.img-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    max-height: 500px;
+}
+
+.descripcion div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.descripcion div a{
+    text-decoration: none;
+    color: white;
+}
+
+/*Nosotros*/
+.nosotros{
+    font-family: 'Righteous', cursive;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30vh;
+}
+.nosotros h2{
+    font-family: 'Silkscreen', cursive;
+    text-shadow: 4px 4px 2px grey;
+}
+.nosotros img{
+    border: solid black 2px;
+    border-radius: 10px;
+}
+.nosotros section{
+    margin: 100px 0;
+}
+.nosotros li{
+    margin: 20px 0;
+}
