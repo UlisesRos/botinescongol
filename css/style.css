@@ -83,6 +83,18 @@ header summary:hover{
     align-items: center;
     margin: 20px;
 }
+.usuario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.usuario img{
+    border: solid 1px white;
+    margin: 0 3px;
+    background-color: #F8F8F8;
+    border-radius: 20px;
+}
 
 .titulo{
     display: flex;
@@ -147,6 +159,7 @@ main .section-productos{
     align-items: center;
     padding-top: 27vh;
 }
+
 .continuar{
     display: flex;
     flex-direction: column;
@@ -252,6 +265,7 @@ footer p{
     height: 2.1875em;
 }
 .pie a img{
+    border: solid 1px white;
     background-color: #F8F8F8;
     border-radius: 20px;
 }
@@ -260,13 +274,20 @@ footer p{
     margin: 0px 1.875em;
     padding: 1.5625em 0;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
 }
-.ws img{
-    background-color: #F8F8F8;
-    border-radius: 20px;
+@media screen and (max-width: 400px) {
+    .pie{
+        justify-content: center;
+    }
+    .redes{
+        margin-top: 20px;
+    }
+    .usuario{
+        margin-top: 10px;
+    }
 }
 
 /*Productos*/
@@ -351,15 +372,17 @@ footer p{
 .img-producto img{
     border: solid black 2px;
     border-radius: 15px;
-    max-width: 80%;
+    max-width: 18.75em;
+    height: 25em;
+
 }
 .img-producto{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
-    max-height: 500px;
+    max-width: 25em;
+    max-height: 31.25em;
 }
 
 .descripcion div{

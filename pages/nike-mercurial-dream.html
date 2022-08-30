@@ -17,7 +17,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
@@ -29,7 +28,7 @@
             <section class="usuario">
                 <a href="#"><img src="../img/buscar1.png" alt="buscador"></a>
                 <a href="#"><img src="../img/usuario-de-perfil.png" alt="usuario"></a>
-                <a href="#"><img src="../img/anadir-a-la-cesta.png" alt="carrito-de-compras"></a>
+                <a href="#"><span class="carrito"></span><img src="../img/anadir-a-la-cesta.png" alt="carrito-de-compras"></a>
             </section>
         </div>
         <nav>
@@ -45,25 +44,31 @@
                     <a href="#"><p>Puma</p></a>
                     <a href="#"><p>Umbro</p></a>
                 </details></li>
-                <li><a href="#">Nosotros</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="nosotros">
-            <section>
-                <h2>¿Quienes somos?</h2>
-                <hr width="100%">
-                <ul>
-                    <li>Los mejores botines usados de Argentina!💯</li>
-                    <li>Medias antideslizantes y sin pie</li>
-                    <li>Estamos en Resistencia, Rosario, CABA</li>
-                    <li>Efectivo o todas las tarjetas</li>
-                    <li>Talles unicos ❗</li>
-                </ul>
+        <div class="ordenProducto">
+            <section class="img-producto">
+                <img src="https://i.pinimg.com/564x/de/6c/cd/de6ccdd99af471557c328ad608560c07.jpg" alt="Botines-negros">
             </section>
-            <section>
-                <img src="../img/futbol.jpg" alt="">
+            <section class="descripcion">
+                <a href="#" class="corazon"><img src="../img/amor.png" alt=""></a> 
+                <p>Botines - Hombres</p>
+                <h2>Nike Mercurial Dream</h2>
+                <p>$28.000</p>
+                <h3>Talles</h3>
+                <div>
+                    <a href=""><p class="talles">37</p></a>
+                    <a href=""><p class="talles"><del>38<a href="#"><img src="../img/notificacion.png" alt="" height="17px" width="17px"></a></del></p></a>
+                    <a href=""><p class="talles"><del>39<a href="#"><img src="../img/notificacion.png" alt="" height="17px" width="17px"></a></del></p></a>
+                    <a href=""><p class="talles">40</p></a>
+                    <a href=""><p class="talles"><del>41<a href="#"><img src="../img/notificacion.png" alt="" height="17px" width="17px"></a></del></p></a>
+                </div>
+                <div class="añadir-carrito">
+                    <button>Añadir al Carrito <img src="../img/flecha-correcta.png" alt="flecha-derecha" height="30px" width="30px"></button>
+                </div>
             </section>
         </div>
     </main>
@@ -71,7 +76,7 @@
         <section class="pie">
             <div>
                 <ul>
-                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="./pages/nosotros.html">Sobre Nosotros</a></li>
                     <li><a href="#">Politicas de Privacidad</a></li>
                     <li><a href="#">Terminos y Condiciones</a></li>
                 </ul>
@@ -87,5 +92,6 @@
         </section>
         <p>CopyRight © Ulises Ros 2022</p>
     </footer>
+<script src="../js/js.js"></script>
 </body>
 </html>
