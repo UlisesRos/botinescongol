@@ -117,9 +117,49 @@ header summary:hover{
     transform: rotate(20deg);
 }
 
+/*Entrada del input*/
+.scale-in-hor-right {
+	-webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes scale-in-hor-right {
+    0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+    }
+}
+@keyframes scale-in-hor-right {
+    0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+    }
+}
+
+/*Salida del input*/
 .buscador{
     display: none;
 }
+
 .usuario input{
     font-family: 'Righteous', cursive;
     padding: 2px 10px;
@@ -146,6 +186,10 @@ header summary:hover{
     color: #F8F8F8;
     font-family: 'Righteous', cursive;
     text-decoration: none;
+}
+.home p{
+    text-align: center;
+    letter-spacing: 5px;
 }
 .titulohome{
     background-color: black;
@@ -205,6 +249,7 @@ main .section-productos{
     gap: 0.9375em 0.625em;
     margin: 1.25em 0;
 }
+
 
 .productos div {
     max-width: 18.75em;
@@ -421,6 +466,7 @@ footer p{
 }
 
 /*Nosotros*/
+/*Con Flex
 .nosotros{
     font-family: 'Righteous', cursive;
     display: flex;
@@ -429,6 +475,27 @@ footer p{
     justify-content: space-around;
     align-items: center;
     padding-top: 30vh;
+}*/
+
+/*Con Grid*/
+.nosotros{
+    font-family: 'Righteous', cursive;
+    padding-top: 30vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+@media (max-width: 768px){
+    .nosotros{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 365px){
+    .nosotros ul{
+        list-style: none;
+    }
 }
 .nosotros h2{
     font-family: 'Silkscreen', cursive;
