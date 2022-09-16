@@ -4,13 +4,15 @@ let botines = document.querySelector("#botines")
 
 //Al apretar la lupa se desplega el input
 buscar1.addEventListener("click", function(){
-    botines.classList.toggle("buscador")
+    botines.removeAttribute("id", "botines")
     botines.classList.toggle("scale-in-hor-right")
+    botines.classList.toggle("scale-out-hor-right")
 })
 
 //Buscar en el input los diferentes botines
 botines.addEventListener("keyup", function(e){
     if(e.code === "Enter"){
+        //Productos
         if(botines.value.toLocaleLowerCase() === "nike mercurial vapor" || botines.value.toLocaleLowerCase() === "mercurial vapor"){
             window.location.href = "../pages/nike-mercurial-vapor.html"
         }
@@ -40,6 +42,14 @@ botines.addEventListener("keyup", function(e){
         }
         else if(botines.value.toLocaleLowerCase() === "nike tiempo legend" || botines.value.toLocaleLowerCase() === "tiempo legend"){
             window.location.href = "../pages/nike-tiempo-legend.html"
+        }
+        //Pag de adidas
+        else if(botines.value.toLocaleLowerCase() === "adidas"){
+            window.location.href = "../pages/adidas.html"
+        }
+        //Pag de nike
+        else if(botines.value.toLocaleLowerCase() === "nike"){
+            window.location.href = "../pages/nike.html"
         }
         else if(botines.value === ""){
             alert("Debes ingresar un nombre")
@@ -50,6 +60,7 @@ botines.addEventListener("keyup", function(e){
         }
     }
     else if(e.code == "NumpadEnter"){
+        //Productos
         if(botines.value.toLocaleLowerCase() === "nike mercurial vapor" || botines.value.toLocaleLowerCase() === "mercurial vapor"){
             window.location.href = "../pages/nike-mercurial-vapor.html"
         }
@@ -80,6 +91,14 @@ botines.addEventListener("keyup", function(e){
         else if(botines.value.toLocaleLowerCase() === "nike tiempo legend" || botines.value.toLocaleLowerCase() === "tiempo legend"){
             window.location.href = "../pages/nike-tiempo-legend.html"
         }
+        //Pag de adidas
+        else if(botines.value.toLocaleLowerCase() === "adidas"){
+            window.location.href = "../pages/adidas.html"
+        }
+        //Pag de nike
+        else if(botines.value.toLocaleLowerCase() === "nike"){
+            window.location.href = "../pages/nike.html"
+        }
         else if(botines.value === ""){
             alert("Debes ingresar un nombre")
         }
@@ -88,4 +107,11 @@ botines.addEventListener("keyup", function(e){
             botines.value = ""
         }
     }
+})
+
+//Corazon Favorito
+let corazon = document.querySelector("#corazon-js")
+
+corazon.addEventListener("click", function(){
+    corazon.classList.toggle("corazon-color")
 })

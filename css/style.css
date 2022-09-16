@@ -156,8 +156,44 @@ header summary:hover{
 }
 
 /*Salida del input*/
-.buscador{
+#botines{
     display: none;
+}
+.scale-out-hor-right {
+	-webkit-animation: scale-out-hor-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: scale-out-hor-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes scale-out-hor-right {
+    0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+    }
+}
+@keyframes scale-out-hor-right {
+    0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    opacity: 1;
+    }
 }
 
 .usuario input{
@@ -299,6 +335,9 @@ main .section-productos{
     text-shadow: 4px 4px 2px grey;
     padding-top: 20px;
 }
+.section-productos h3{
+    font-family: 'Silkscreen', cursive;
+}
 
 .section-productos p{
     font-family: 'Righteous', cursive;
@@ -373,10 +412,22 @@ footer p{
     border-radius: 20px;
     width: 400px;
     height: 500px;
+    background-image: url(https://i.pinimg.com/564x/2e/74/67/2e7467753bd425773802960ce71e5c90.jpg);
+    background-position: center;
+    color: white;
 }
 
 .corazon {
     align-self: flex-end;
+}
+.corazon img{
+    border: solid black 1.5px;
+    border-radius: 20px;
+    padding: 5px;
+}
+.corazon-color{
+    background-color: rgb(245, 70, 70);
+    border-radius: 10px;
 }
 
 .descripcion p{
@@ -390,7 +441,7 @@ footer p{
     background-color: rgb(70, 70, 70);
     font-family: 'Righteous', cursive;
     padding: 10px;
-    margin: 10px 1.5px;
+    margin: 10px 3px;
     border-radius: 10px;
     box-shadow: 6px 6px 3px black;
 }
@@ -441,9 +492,14 @@ footer p{
 .img-producto img{
     border: solid black 2px;
     border-radius: 15px;
-    max-width: 18.75em;
-    height: 25em;
-
+    width: 25rem;
+    height: 31.25rem;
+}
+@media (max-width: 450px){
+    .img-producto img{
+        width: 18.75rem;
+        height: 25rem;
+    }
 }
 .img-producto{
     display: flex;
@@ -574,8 +630,76 @@ footer p{
     cursor: pointer;
     font-family: 'Righteous', cursive;;
 }
-.ingreso-nuevo div button:hover{
-    transform: scale(1.1);
+/*Animacion boton registrar*/
+.registrate:hover {
+	-webkit-animation: registrate 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: registrate 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+@-webkit-keyframes registrate {
+    0%,
+    100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    }
+    10% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+    }
+    20%,
+    40%,
+    60% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+    }
+    30%,
+    50%,
+    70% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    }
+    80% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+    }
+    90% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+    }
+}
+@keyframes registrate {
+    0%,
+    100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    }
+    10% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+    }
+    20%,
+    40%,
+    60% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+    }
+    30%,
+    50%,
+    70% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+    }
+    80% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+    }
+    90% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+    }
 }
 
 .ingreso-nuevo input{
@@ -585,4 +709,7 @@ footer p{
     padding: 2px 15px;
     border-radius: 3px;
 }
-
+/*ADIDAS*/
+.adidas{
+    display: none;
+}
